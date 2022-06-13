@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap');
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Fraunces', serif; */
+
+:root {
+    --fontbarlow: 'Barlow', sans-serif;
+    --fontfraunces: 'Fraunces', serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* -------------------- HEADER / NAVBAR (sin hamburguesa) -------------------- */
+.main-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    gap: clamp(50px, 10vh, 20vh);
+    background: url(/images/desktop/image-header.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 100%;
+    background-color: #3dbfff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 14vh;
+    padding: 0 40px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    font-family: var(--fontbarlow);
+    color: white;
+}
+
+.navbar-ul a {
+    color: inherit;
+    font-size: 18px;
+}
+
+.navbar-ul button {
+    font-family: var(--fontfraunces);
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    height: 60px;
+    width: 130px;
+    font-size: 18px; 
+    cursor: pointer;   
+}
+
+.navbar-ul button:hover{
+    color: white;
+    background-color:#ffffff4d;
+}
+
+.second-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    gap: 10vh;
+}
+
+.second-header-container p {
+    font-family: var(--fontfraunces);
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 900;
+    letter-spacing: 10px;
+}
+
+.second-header-container img {
+    animation: moverFlecha alternate infinite 0.8s;
+}
+
+@keyframes moverFlecha {
+    from {
+        transform: translate(0);
+    }
+
+    to {
+        transform: translateY(30%);
+    }
+}
+
+@media screen and (max-width: 375px) {
+      .main-header-container {
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+
+    .second-header-container {
+        min-height: 55vh;
+    }
+}
+
+/* -------------------- FIN HEADER / NAVBAR -------------------- */
+
+/* -------------------- HAMBURGUESA -------------------- */
+
+#menu-hamburguesa, .label__menu {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .header {
+        padding: 0 20px;
+    }
+
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navbar-ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90vw;
+        padding: 20px 10px;
+        color: hsl(213, 9%, 39%);
+        background-color: white;
+        position: absolute;
+        top: 13%;
+        right: 5%;
+        z-index: 1;
+    }
+
+    @keyframes desplegarMenu {
+        from {
+            transform: translateY(0);
+        }
+
+        to {
+            transform: translateY(100%);
+        }
+    }
+
+    .navbar-ul button {
+        background-color: hsl(51, 100%, 49%);
+    }
+
+    .navbar-ul button:hover{  
+        background-color:hsl(7, 99%, 70%);
+    }
+
+    .label__menu {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+
+    #menu-hamburguesa:checked ~ .menu {
+        display: none;
+
+    }
+}
+
+
+
+
+
+
+/* NAVBAR  */
