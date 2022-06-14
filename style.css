@@ -189,8 +189,170 @@ font-family: 'Fraunces', serif; */
 }
 
 
+/* -------------------- FIN HAMBURGUESA -------------------- */
+
+/* -------------------- SECTION UNO -------------------- */
+
+.main-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(1fr, 1fr));
+    grid-template-rows: repeat(3, minman(1fr, 1fr));
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+}
+
+.first-element {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;    
+}
+
+.second-element {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background: url(/images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.third-element {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background: url(/images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fourth-element {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.fifth-element {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background: url(/images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.sixth-element {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    background: url(/images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-section-element {
+    width: 50vw;
+    height: 75vh;
+    display: flex;
+}
+
+.first-element, .fourth-element {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 55%;
+}
+
+.fifth-element, .sixth-element {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.h2__element-nobg {
+    font-family: var(--fontfraunces);
+    font-size: 36px;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%)
+}
+
+.p__element-nobg {
+    font-family: var(--fontbarlow);
+    color: hsl(213, 9%, 39%);
+    font-weight: 500;
+}
+
+.main-section a {
+    font-family: var(--fontfraunces);
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    width: 35%;
+
+}
+
+.main-section a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -4px;
+    left: -5px;
+    border-radius: 50px;
+    opacity: 0.5;
+}
+
+.main-section a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    bottom: -4px;
+    left: -5px;
+    border-radius: 50px;
+    opacity: 0.8;
+    transform: translate(0px, 5px);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-in;
+}
+
+.learn-more-a::after {
+    background: hsl(51, 100%, 49%);
+}
+
+.learn-more-b::after {
+    background: hsl(7, 99%, 70%);
+}
+
+.h2__element-bg {
+    font-family: var(--fontfraunces);
+    font-size: 36px;
+    font-weight: 900;    
+}
+
+.p__element-bg {
+    font-family: var(--fontbarlow);
+    font-weight: 600;    
+    width: 50%;
+}
+
+.h2__fifth-element, .p__fifth-element {
+    color:hsl(167, 40%, 24%);
+}
+
+.h2__sixth-element, .p__sixth-element {
+    color: hsl(198, 62%, 26%);
+}
 
 
 
 
-/* NAVBAR  */
+
+/* 
+.main-section img {
+    width: 100%;
+    height: auto;
+} */
