@@ -180,8 +180,6 @@ font-family: 'Fraunces', serif; */
         cursor: pointer;
     }
 
-
-
     #menu-hamburguesa:checked ~ .menu {
         display: none;
 
@@ -195,8 +193,8 @@ font-family: 'Fraunces', serif; */
 
 .main-section {
     display: grid;
-    grid-template-columns: repeat(2, minmax(1fr, 1fr));
-    grid-template-rows: repeat(3, minman(1fr, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50vw, 1fr));
+    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     place-items: center;
@@ -347,12 +345,8 @@ font-family: 'Fraunces', serif; */
     color: hsl(198, 62%, 26%);
 }
 
+@media screen and (max-width: 375px) {
 
+}
 
-
-
-/* 
-.main-section img {
-    width: 100%;
-    height: auto;
-} */
+/* -------------------- FIN SECTION UNO -------------------- */
