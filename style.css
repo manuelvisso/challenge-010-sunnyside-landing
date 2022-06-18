@@ -448,5 +448,25 @@ font-family: 'Fraunces', serif; */
 
 /* -------------------- FIN SECTION DOS / TESTIMONIOS DE CLIENTES -------------------- */
 
-/* -------------------- INICIO SECTION TRES / TESTIMONIOS DE CLIENTES -------------------- */
+/* -------------------- INICIO SECTION TRES -------------------- */
+
+
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(max(25vw, 150px), 1fr));
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    font-size: 0;
+
+}
+
+
+.gallery-section img {
+    width: 100%;
+}
+
+/* -------------------- FIN SECTION TRES -------------------- */
+
+/* -------------------- INICIO FOOTER -------------------- */
 
