@@ -470,3 +470,40 @@ font-family: 'Fraunces', serif; */
 
 /* -------------------- INICIO FOOTER -------------------- */
 
+footer {
+    background-color: hsl(168, 34%, 64%);
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+.fotter-logo p {
+    font-family: var(--fontbarlow);
+    font-weight: 900;
+    color: hsl(167, 70%, 24%);
+    font-size: 28px;
+}
+
+.info-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.info-link a {
+    font-family: var(--fontbarlow);
+    color: hsl(167, 40%, 24%);
+    font-weight: 500;
+}
+
+.rrss-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* -------------------- FIN FOOTER -------------------- */
