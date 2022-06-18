@@ -194,7 +194,7 @@ font-family: 'Fraunces', serif; */
 
 .main-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(max(50vw, 500px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(max(49vw, 500px), 1fr));
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
@@ -453,7 +453,7 @@ font-family: 'Fraunces', serif; */
 
 .gallery-section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(max(25vw, 150px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(max(24vw, 150px), 1fr));
     justify-content: center;
     align-items: center;
     background-color: #fafafa;
